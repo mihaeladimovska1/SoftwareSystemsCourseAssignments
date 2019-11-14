@@ -1,0 +1,25 @@
+<head>
+    <style>
+     p.widget { text-indent: 1cm }
+    </style>
+</head>
+<center>
+    <h2>Account Management Form</h2>
+</center>
+<hr>
+<p>
+    <form action="cgi-bin/post_cgi.py" method="post">
+        <input type="radio" name="action" value="login" />Login
+        <p class="widget">user id: <input type="text" name="userid" maxlength="8" />
+        <p class="widget">password: <input type="password" name="password" maxlength="8" />
+            <p>
+        <input type="radio" name="action" value="add" />Add Account
+        <p class="widget">name: <input type="text" name="name" maxlength="20" />
+        <p class="widget">user id: <input type="text" name="newuserid" maxlength="8" />
+        <p class="widget">password: <input type="text" name="newpassword" maxlength="8" />
+        <p>
+        <input type="radio" name="action" value="delete" />Delete Account
+        <p class="widget">user id: <input type="text" name="deluserid" maxlength="8" />
+        <p>
+        <input type="submit" />
+    </form>
